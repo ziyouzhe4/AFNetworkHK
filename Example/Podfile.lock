@@ -1,0 +1,16 @@
+PODS:
+  - AFNetworkHK (0.1.0)
+
+DEPENDENCIES:
+  - AFNetworkHK (from `../`)
+
+EXTERNAL SOURCES:
+  AFNetworkHK:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AFNetworkHK: 4eb17457fbd8f1e65cfac7b213babe76d1df3195
+
+PODFILE CHECKSUM: e600027de4b38bdc816a64c2b98afd1e8e0ffbad
+
+COCOAPODS: 1.11.2

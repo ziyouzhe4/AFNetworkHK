@@ -1,0 +1,6 @@
+framework module AFNetworkHK {
+  umbrella header "AFNetworkHK-umbrella.h"
+
+  export *
+  module * { export * }
+}

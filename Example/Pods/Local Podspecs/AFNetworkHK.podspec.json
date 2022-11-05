@@ -1,0 +1,22 @@
+{
+  "name": "AFNetworkHK",
+  "version": "0.1.0",
+  "summary": "A short description of AFNetworkHK.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/majianjie/AFNetworkHK",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "majianjie": "majianjie@didiglobal.com"
+  },
+  "source": {
+    "git": "https://github.com/majianjie/AFNetworkHK.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "AFNetworkHK/Classes/**/*"
+}
