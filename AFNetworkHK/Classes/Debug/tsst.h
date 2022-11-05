@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface tsst : DSWebViewController
+@interface tsst : NSObject
 
 @end
 
