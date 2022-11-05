@@ -10,6 +10,8 @@
 #endif
 #endif
 
+#import "tsst.h"
+#import "DriverOperationController.h"
 
 FOUNDATION_EXPORT double AFNetworkHKVersionNumber;
 FOUNDATION_EXPORT const unsigned char AFNetworkHKVersionString[];
