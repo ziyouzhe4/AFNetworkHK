@@ -30,7 +30,17 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '10.0'
 
+  
   s.source_files = 'AFNetworkHK/Classes/**/*'
+  
+  if ENV['SOURCECODE']
+     puts '-----------  AFNetworkHK Source Code'
+   else
+     puts '+++++++++++  AFNetworkHK Binary'
+       s.source_files = 'Example/AFNetworkHKBinary/Products/Binary-universal/include/**'
+       s.public_header_files = 'Example/AFNetworkHKBinary/Products/Binary-universal/include/*.h'
+       s.ios.vendored_libraries = 'Example/AFNetworkHKBinary/Products/Binary-universal/libAFNetworkHKBinary.a'
+   end
   
   # s.resource_bundles = {
   #   'AFNetworkHK' => ['AFNetworkHK/Assets/*.png']

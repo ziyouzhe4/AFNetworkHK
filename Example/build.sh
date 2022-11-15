@@ -51,20 +51,22 @@ fi
 echo "===== 构建x86_64架构 ====="
 xcodebuild -workspace "${PROJECT_NAME}.xcworkspace" -scheme "${SCHEMENAME}" -configuration "${CONFIGURATION}" -sdk iphonesimulator CONFIGURATION_BUILD_DIR="${IPHONE_SIMULATOR_BUILD_DIR}/x86_64" ARCHS='x86_64' VALID_ARCHS='x86_64' $ACTION
 # Build device platform. (armv7, arm64)
-echo "========== Build Device Platform =========="
-echo "===== Build Device Platform: armv7 ====="
-xcodebuild -workspace "${PROJECT_NAME}.xcworkspace" -scheme "${SCHEMENAME}" -configuration "${CONFIGURATION}" -sdk iphoneos CONFIGURATION_BUILD_DIR="${IPHONE_DEVICE_BUILD_DIR}/armv7" ARCHS='armv7 armv7s' VALID_ARCHS='armv7 armv7s' $ACTION
+# echo "========== Build Device Platform =========="
+# echo "===== Build Device Platform: armv7 ====="
+# xcodebuild -workspace "${PROJECT_NAME}.xcworkspace" -scheme "${SCHEMENAME}" -configuration "${CONFIGURATION}" -sdk iphoneos CONFIGURATION_BUILD_DIR="${IPHONE_DEVICE_BUILD_DIR}/armv7" ARCHS='armv7 armv7s' VALID_ARCHS='armv7 armv7s' $ACTION
 echo "===== Build Device Platform: arm64 ====="
 xcodebuild -workspace "${PROJECT_NAME}.xcworkspace" -scheme "${SCHEMENAME}" -configuration "${CONFIGURATION}" -sdk iphoneos CONFIGURATION_BUILD_DIR="${IPHONE_DEVICE_BUILD_DIR}/arm64" ARCHS='arm64' VALID_ARCHS='arm64' $ACTION
 ### Build universal platform.
 echo "========== Build Universal Platform =========="
 ## Copy the framework structure to the universal folder (clean it first).
 rm -rf "${UNIVERSAL_OUTPUTFOLDER}"
+echo ${UNIVERSAL_OUTPUTFOLDER}
 mkdir -p "${UNIVERSAL_OUTPUTFOLDER}"
 ## Copy the last product files of xcodebuild command.
 cp -R "${IPHONE_DEVICE_BUILD_DIR}/arm64/lib${SCHEMENAME}.a" "${UNIVERSAL_OUTPUTFOLDER}/lib${SCHEMENAME}.a"
+
 ### Smash them together to combine all architectures.
-lipo -create "${IPHONE_SIMULATOR_BUILD_DIR}/x86_64/lib${SCHEMENAME}.a" "${IPHONE_DEVICE_BUILD_DIR}/armv7/lib${SCHEMENAME}.a" "${IPHONE_DEVICE_BUILD_DIR}/arm64/lib${SCHEMENAME}.a" -output "${UNIVERSAL_OUTPUTFOLDER}/lib${SCHEMENAME}.a"
+lipo -create "${IPHONE_SIMULATOR_BUILD_DIR}/x86_64/lib${SCHEMENAME}.a" "${IPHONE_DEVICE_BUILD_DIR}/arm64/lib${SCHEMENAME}.a" -output "${UNIVERSAL_OUTPUTFOLDER}/lib${SCHEMENAME}.a"
 
 echo "========== Create Standard Structure =========="
 cp -r "${IPHONE_DEVICE_BUILD_DIR}/arm64/usr/local/include/" "${UNIVERSAL_OUTPUTFOLDER}/include/"

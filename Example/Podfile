@@ -5,9 +5,4 @@ platform :ios, '10.0'
 target 'AFNetworkHK_Example' do
   pod 'AFNetworkHK', :path => '../'
 
-  target 'AFNetworkHK_Tests' do
-    inherit! :search_paths
-
-    
-  end
 end
