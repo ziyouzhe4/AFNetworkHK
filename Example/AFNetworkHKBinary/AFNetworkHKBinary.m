@@ -9,4 +9,10 @@
 
 @implementation AFNetworkHKBinary
 
+- (void)test{
+
+    NSLog(@"%s",__func__);
+    
+}
+
 @end
