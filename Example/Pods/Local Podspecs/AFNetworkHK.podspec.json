@@ -18,9 +18,5 @@
   "platforms": {
     "ios": "10.0"
   },
-  "source_files": "Example/AFNetworkHKBinary/Products/Binary-universal/include/**",
-  "public_header_files": "Example/AFNetworkHKBinary/Products/Binary-universal/include/*.h",
-  "ios": {
-    "vendored_libraries": "Example/AFNetworkHKBinary/Products/Binary-universal/libAFNetworkHKBinary.a"
-  }
+  "source_files": "AFNetworkHK/Classes/**/*"
 }
