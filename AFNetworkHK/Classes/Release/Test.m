@@ -9,4 +9,10 @@
 
 @implementation Test
 
+- (void)eat{
+
+    NSLog(@"%s",__func__);
+    
+}
+
 @end
