@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A4F455829237E49001CD974 /* AFNetworkHKBinary.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A4F455729237E49001CD974 /* AFNetworkHKBinary.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0A4F455A29237E51001CD974 /* AFNetworkHKBinary.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F455929237E51001CD974 /* AFNetworkHKBinary.m */; };
 		0A4F455F292385F0001CD974 /* Test.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A4F455D292385F0001CD974 /* Test.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A4F456329238776001CD974 /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F456229238776001CD974 /* Test.m */; };
+		0A4F4565292388F4001CD974 /* AFNetworkHKBinary.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A4F4564292388F4001CD974 /* AFNetworkHKBinary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A4F456729238909001CD974 /* AFNetworkHKBinary.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F456629238908001CD974 /* AFNetworkHKBinary.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -43,6 +43,8 @@
 		0A4F455929237E51001CD974 /* AFNetworkHKBinary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkHKBinary.m; sourceTree = "<group>"; };
 		0A4F455D292385F0001CD974 /* Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
 		0A4F456229238776001CD974 /* Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
+		0A4F4564292388F4001CD974 /* AFNetworkHKBinary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AFNetworkHKBinary.h; path = AFNetworkHKBinary/AFNetworkHKBinary.h; sourceTree = "<group>"; };
+		0A4F456629238908001CD974 /* AFNetworkHKBinary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AFNetworkHKBinary.m; path = AFNetworkHKBinary/AFNetworkHKBinary.m; sourceTree = "<group>"; };
 		2C2A46A7D41E52EF44642507 /* Pods-AFNetworkHK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AFNetworkHK_Example.debug.xcconfig"; path = "Target Support Files/Pods-AFNetworkHK_Example/Pods-AFNetworkHK_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		34BCE66347BAC4E75CF6B06B /* Pods_AFNetworkHK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AFNetworkHK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		45D49FFD298ED4401BCFFE17 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -101,6 +103,8 @@
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
+				0A4F456629238908001CD974 /* AFNetworkHKBinary.m */,
+				0A4F4564292388F4001CD974 /* AFNetworkHKBinary.h */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for AFNetworkHK */,
 				0A4F4543292377B2001CD974 /* AFNetworkHKBinary */,
@@ -191,7 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A4F455F292385F0001CD974 /* Test.h in Headers */,
-				0A4F455829237E49001CD974 /* AFNetworkHKBinary.h in Headers */,
+				0A4F4565292388F4001CD974 /* AFNetworkHKBinary.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,7 +356,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A4F455A29237E51001CD974 /* AFNetworkHKBinary.m in Sources */,
+				0A4F456729238909001CD974 /* AFNetworkHKBinary.m in Sources */,
 				0A4F456329238776001CD974 /* Test.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
