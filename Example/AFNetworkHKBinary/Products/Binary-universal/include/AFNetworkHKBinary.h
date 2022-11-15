@@ -9,4 +9,6 @@
 
 @interface AFNetworkHKBinary : NSObject
 
+- (void)test;
+
 @end

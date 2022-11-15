@@ -11,6 +11,7 @@
 		0A4F456329238776001CD974 /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F456229238776001CD974 /* Test.m */; };
 		0A4F4565292388F4001CD974 /* AFNetworkHKBinary.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A4F4564292388F4001CD974 /* AFNetworkHKBinary.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A4F456729238909001CD974 /* AFNetworkHKBinary.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F456629238908001CD974 /* AFNetworkHKBinary.m */; };
+		0A4F4568292389A8001CD974 /* AFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* AFViewController.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -356,6 +357,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A4F4568292389A8001CD974 /* AFViewController.m in Sources */,
 				0A4F456729238909001CD974 /* AFNetworkHKBinary.m in Sources */,
 				0A4F456329238776001CD974 /* Test.m in Sources */,
 			);

@@ -8,6 +8,7 @@
 
 #import "AFViewController.h"
 #import "Test.h"
+//#import "AFNetworkHKBinary.h"
 
 @interface AFViewController ()
 
@@ -21,6 +22,9 @@
 	
     Test *t = [[Test alloc] init];
     [t eat];
+    
+//    AFNetworkHKBinary *a = [[AFNetworkHKBinary alloc] init];
+//    [a test];
     
 }
 
